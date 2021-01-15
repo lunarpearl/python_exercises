@@ -5,9 +5,4 @@ with open('hamlet.txt') as file:
         re.sub(r'[^\w\s]', '',line)
         line=line.strip().replace('.','')
         words+=line.split()
-    total=0
-    for word in words:
-        total+=len(word)
-    avg_length=total/len(words)
-    print(f'The average word length of "Hamlet" is {avg_length}.')
-
+    print(words)

@@ -3,7 +3,7 @@ with open('jenseits_von_gut_und_boese.txt') as file:
     words=[]
     for line in file:
         re.sub(r'[^\w\s]', '',line)
-        line.strip()
+        line=line.strip().replace('.','')
         words+=line.split()
     total=0
     for word in words:
